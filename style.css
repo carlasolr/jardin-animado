@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.containerA {
+	display: inline-block;
+	position: relative;
+	width: 100vw;
+}
+
+.clouds {
+	position: absolute;
+	width: 100px;
+	height: 60px;
+}
+
+.cloud-1 {
+	transform: scaleX(-1);
+	left: 8vw;
+	top: 10vh;
+}
+
+.cloud-2 {
+	left: 28vw;
+	top: 17vh; 
+}
+
+.cloud-3 {
+	transform: scaleX(-1);
+	left: 47vw;
+	top: 8vh;
+}
+
+.cloud-4 {
+	left: 65vw;
+	top: 15vh;
+}
+
+.sun {
+	position: absolute;
+	width: 200px;
+	height: 190px;
+	right: 2vw;
+	top: 2vh;
+}
+
+.moon {
+	visibility: hidden;
+	position: absolute;
+	width: 200px;
+	height: 190px;
+	left: 2vw;
+	top: 2vh;
+}
+
+.containerB {
+	position: absolute;
+	width: 100vw;
+	bottom: 10px;
+	text-align: center;
+}
+
+.forest {
+	width: 95%;
+}
+ 
+.containerC {
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	bottom: 15px;
+}
+
+.flowers {
+	width: 75px;
+	height: 120px;
+	margin: 0px 20px;
+}
+
+.grass {
+	position: absolute;
+	width: 86%;
+	height: 20px;
+	background-color: #8CC152;
+	border: 1px solid #8CC152;
+	border-radius: 20px;
+	bottom: 0px;
+	left: 7vw;	
+}
+
+
+
+
+
+
+/*------------------------------
+.bloque {
+	background-color: red;
+	width: 300px;
+	height: 300px;
+	animation: movCiclico 1s;
+	border-radius: 50%;
+	animation-iteration-count: infinite;
+}
+
+@keyframes movCiclico {
+	0% {
+		background-color: red;
+		border-radius: 0%;
+	}
+	
+	50% {
+		background-color: black;
+		border-radius: 50%;
+	}
+
+	100% {
+		background-color: red;
+		border-radius: 0%;
+
+	}
+}
+*/
