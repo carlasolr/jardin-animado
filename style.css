@@ -1,24 +1,34 @@
 body {
+	overflow: hidden;
 	margin: 0;
 	padding: 0;
+	animation: lasHoras 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .containerA {
-	display: inline-block;
 	position: relative;
 	width: 100vw;
+	height: 100vh;
 }
+
 
 .clouds {
 	position: absolute;
 	width: 100px;
 	height: 60px;
+	animation: clouds 10s;
+	animation-delay: 0.2s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .cloud-1 {
 	transform: scaleX(-1);
 	left: 8vw;
-	top: 10vh;
+	top: 6vh;
 }
 
 .cloud-2 {
@@ -37,21 +47,32 @@ body {
 	top: 15vh;
 }
 
+.cloud-5 {
+	left: -20vw;
+	top: 20vh;
+}
+
 .sun {
 	position: absolute;
 	width: 200px;
 	height: 190px;
 	right: 2vw;
 	top: 2vh;
+	animation: sun 10s;
+	animation-iteration-count: infinite;	
+	animation-timing-function: linear;	
 }
 
 .moon {
-	visibility: hidden;
+	opacity: 0;
 	position: absolute;
-	width: 200px;
-	height: 190px;
-	left: 2vw;
-	top: 2vh;
+	width: 140px;
+	height: 150px;
+	left: 3vw;
+	top: 4vh;	
+	animation: moon 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .containerB {
@@ -62,20 +83,28 @@ body {
 }
 
 .forest {
-	width: 95%;
+	width: 85%;
 }
- 
+
 .containerC {
 	position: absolute;
 	text-align: center;
 	width: 100vw;
 	bottom: 15px;
+	animation: flowers 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .flowers {
-	width: 75px;
-	height: 120px;
+	width: 60px;
+	height: 110px;
 	margin: 0px 20px;
+}
+
+.flowers.especial-one {
+ width: 100px;
+ margin: 0px 15px;
 }
 
 .grass {
@@ -88,37 +117,3 @@ body {
 	bottom: 0px;
 	left: 7vw;	
 }
-
-
-
-
-
-
-/*------------------------------
-.bloque {
-	background-color: red;
-	width: 300px;
-	height: 300px;
-	animation: movCiclico 1s;
-	border-radius: 50%;
-	animation-iteration-count: infinite;
-}
-
-@keyframes movCiclico {
-	0% {
-		background-color: red;
-		border-radius: 0%;
-	}
-	
-	50% {
-		background-color: black;
-		border-radius: 50%;
-	}
-
-	100% {
-		background-color: red;
-		border-radius: 0%;
-
-	}
-}
-*/
