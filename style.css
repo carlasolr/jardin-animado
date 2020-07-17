@@ -1,7 +1,13 @@
-body {
-	overflow: hidden;
+body {	
 	margin: 0;
 	padding: 0;
+}
+
+.containerPrincipal {
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
 	animation: lasHoras 10s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
