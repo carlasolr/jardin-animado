@@ -1,11 +1,11 @@
 /*=== basics ===*/
 body {	
-	overflow: hidden;
 	margin: 0;
 	padding: 0;
 }
 
 .containerPrincipal {
+	overflow: hidden;
 	position: relative;
 	width: 100vw;
 	height: 100vh;
