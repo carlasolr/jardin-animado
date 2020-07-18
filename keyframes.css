@@ -2,41 +2,55 @@
 	0%, 100% {	background-color: white;	}
 	20% {	background-color: #665c3b;	}
 	40% {	background-color: #66624f;	}
-	60% {	background-color: #2e2b3a;	}
-	80% {	background-color: #665c3b;	}
+	60% {	background-color: #3c3653;	}
+	80% {	background-color: #5e522d;	}
+}
+
+
+@keyframes clouds {
+	0%, 100% {	opacity: 1;	left: 5vw; }
+	20% {	opacity: 1; left: 20vw;	}
+	40% {	opacity: 0.2;	left: 40vw;	}
+	60% {	opacity: 0; left: 65vw;	}
+	80% {	opacity: 0;	left: 3vw;}
+}
+
+@keyframes dif-clouds {
+	0%, 100% {	opacity: 1;	left: 7vw; }
+	20% {	opacity: 1; left: -20vw;	}
+	40% {	opacity: 0.2;	left: -30vw;	}
+	60% {	opacity: 0; left: -45vw;	}
+	80% {	opacity: 0;	left: 5vw; }
 }
 
 @keyframes sun {
 	0%, 100% {	opacity: 1;	right: 2vw;	}
 	20% {	opacity: 1;	right: 40vw;	}
 	40% {	opacity: 0;	right: 75vw;	}
-	60% {	opacity: 0;	right: 0vw;	}
-	80% {	opacity: 0.3;	right: 0vw;	}
+	60% {	opacity: 0;	right: -5vw;	}
+	80% {	opacity: 0.3;	right: -3vw;	}
 }
-
-
-@keyframes clouds {
-	0%, 100% {	opacity: 1;	}
-	40% {	opacity: 0.2;	}
-	60% {	left: 85vw;	opacity: 0;	}
-	75% {	opacity: 0;	}
-	80% {	opacity: 0.2;	}
-}
-
 
 @keyframes moon {
-	0% {	opacity: 0;	}
+	0%, 100% {	opacity: 0;	}
 	20% {	opacity: 0;	}
 	40% {	opacity: 0;	}
-	60% {	left: 3vw;	opacity: 1;	}
+	60% {	left: 4vw;	opacity: 1;	}
 	80% {	left: -2vw;	opacity: 0;	}
-	100% { left: -1vw;	opacity: 0;	}
+}
+
+@keyframes seagull {
+	0%, 100% { opacity: 0;	width: 520px;	height: 200px;	top: 30vh;	left: 15vw;}
+	20% { opacity: 0.5; width: 500px; height: 180px;	top: 27vh;	left: 18vw;}
+	40% {	opacity: 1;	width: 450px; height: 130px;	top: 25vh;	left: 25vw;}
+	60%	{ opacity: 0;	width: 400px; height: 110px;	top: 25vh;	left: 27vw;}
+	80% { opacity: 0;	width: 380px; height: 100px;	top: 25vh;	left: 30vw;}
 }
 
 @keyframes flowers {
 	0%, 100% {	bottom: 15px;	}
-	25% {	bottom: -50px;	}
+	20% {	bottom: -50px;	}
 	40% {	bottom: -80px;	}
-	70% {	bottom: -150px;	}
+	60% {	bottom: -150px;	}
 	80% {	bottom: -20px;	}
 }
