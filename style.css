@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 /*=== basics ===*/
 body {	
 	margin: 0;
 	padding: 0;
 }
 
+.blackboard {
+	font-family:'Poppins', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	background-color: rgb(112, 36, 78);
+	color: white;
+	position: absolute;
+	opacity: 0.7;
+	left: 2%;
+	top: 1%;
+}
+
 .containerPrincipal {
 	overflow: hidden;
 	position: relative;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
+}
+
+.animacion-cielo {
 	animation: lasHoras 24s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
@@ -25,7 +41,7 @@ body {
 .containerClouds {
 	position: absolute;
 	left: 5vw;
-	animation: clouds 20s;
+	animation: clouds 22s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
@@ -33,15 +49,16 @@ body {
 .containerClouds-bis {
 	position: absolute;
 	left: 7vw;
-	animation: dif-clouds 20s;
+	animation: dif-clouds 22s;
+	animation-delay: 0.1s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
 
 .clouds {
 	position: absolute;
-	width: 100px;
-	height: 60px;
+	width: 120px;
+	height: 80px;
 }
 
 .cloud-1 {
@@ -75,15 +92,17 @@ body {
 
 .sun {
 	position: absolute;
-	width: 200px;
-	height: 190px;
+	width: 250px;
+	height: 220px;
 	right: 2vw;
 	top: 2vh;
+}
+
+.animacion-sol {
 	animation: sun 24s;
 	animation-iteration-count: infinite;	
 	animation-timing-function: linear;	
 }
-
 
 .seagull {
 	position: absolute;
@@ -91,6 +110,9 @@ body {
 	height: 200px;
 	top: 30vh;
 	left: 15vw;
+}
+
+.animacion-gaviotas {
 	animation: seagull 24s;
 	animation-delay: 1s;
 	animation-iteration-count: infinite;
@@ -100,10 +122,13 @@ body {
 .moon {
 	opacity: 0;
 	position: absolute;
-	width: 145px;
-	height: 150px;
+	width: 200px;
+	height: 190px;
 	left: 3vw;
 	top: 4vh;	
+}
+
+.animacion-luna {
 	animation: moon 24s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
@@ -129,15 +154,19 @@ body {
 	text-align: center;
 	width: 100vw;
 	bottom: 15px;
-	animation: flowers 24s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
 }
 
 .flowers {
+	position: relative;
 	width: 60px;
 	height: 110px;
 	margin: 0px 20px;
+}
+
+.animacion-flores {
+	animation: flowers 24s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .flowers.especial-one {

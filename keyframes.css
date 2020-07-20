@@ -1,27 +1,29 @@
+
 @keyframes lasHoras {
-	0%, 100% {	background-color: white;	}
-	20% {	background-color: #665c3b;	}
-	40% {	background-color: #66624f;	}
-	60% {	background-color: #3c3653;	}
-	80% {	background-color: #5e522d;	}
+	0%, 100% {	background-color: rgb(213, 227, 228);	}
+	20% {	background-color: #eb823c;	}
+	40% {	background-color: #7a6d2b;	}
+	60% {	background-color: #1b0963;	}
+	80% {	background-color: #b6a060;	}
 }
 
 
 @keyframes clouds {
 	0%, 100% {	opacity: 1;	left: 5vw; }
-	20% {	opacity: 1; left: 20vw;	}
+	20% {	opacity: 0.5; left: 20vw;	}
 	40% {	opacity: 0.2;	left: 40vw;	}
 	60% {	opacity: 0; left: 65vw;	}
-	80% {	opacity: 0;	left: 3vw;}
+	80% {	opacity: 0;	left: 5vw	}
 }
 
 @keyframes dif-clouds {
 	0%, 100% {	opacity: 1;	left: 7vw; }
 	20% {	opacity: 1; left: -20vw;	}
-	40% {	opacity: 0.2;	left: -30vw;	}
+	40% {	opacity: 0.3;	left: -30vw;	}
 	60% {	opacity: 0; left: -45vw;	}
-	80% {	opacity: 0;	left: 5vw; }
+	80% {	opacity: 0;	left: 5vw	}
 }
+
 
 @keyframes sun {
 	0%, 100% {	opacity: 1;	right: 2vw;	}
@@ -54,3 +56,10 @@
 	60% {	bottom: -150px;	}
 	80% {	bottom: -20px;	}
 }
+
+@keyframes elegidas {
+	0%, 100% {	bottom: 15px;	}
+	50% {	bottom: 30px;	}
+	80% {	bottom: 20px;}
+}
+
