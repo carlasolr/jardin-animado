@@ -84,7 +84,7 @@ body {
 }
 
 
-/*=== sun - moon - seagulls ===*/
+/*=== sun - moon - seagulls - stars ===*/
 .sunAndMoon {
 	width: 100vw;
 	height: 100vh;
@@ -134,7 +134,6 @@ body {
 	animation-timing-function: linear;
 }
 
-
 /*=== forest ===*/
 .containerForest {
 	position: absolute;
@@ -146,7 +145,6 @@ body {
 .forest {
 	width: 85%;
 }
-
 
 /*=== flowers ===*/
 .containerFlowers {

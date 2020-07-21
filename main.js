@@ -119,21 +119,25 @@ window.onload = function() {
       return
     }
 
+    
+    const horaAComparar = parseInt(hora.slice(11,13))
 
+        
 
-    /*===cambio de cielo + flores segun °C===*/
-    if(temperatura >= 8 && temperatura <= 10){
+    /*===cambio de cielo + flores segun °C===*/    
+    if(temperatura >= 8 && temperatura <= 10 && horaAComparar >= 20 || horaAComparar < 5){
       first()
-    } else if(temperatura > 10 && temperatura <= 13){
+      return
+    } else if(temperatura > 10 && temperatura <= 13 && horaAComparar > 7){
       second()
-    } else if(temperatura > 13 && temperatura <= 15) {
+    } else if(temperatura > 13 && temperatura <= 15 && horaAComparar > 15) {
       third()
-    } else if(temperatura > 15 && temperatura <= 18) {
+    } else if(temperatura > 15 && temperatura <= 18 && horaAComparar >= 5 && horaAComparar <= 7) {
       fourth()
-    } else if(temperatura > 18) {
+    } else if(temperatura > 18 && horaAComparar > 12) {
       fifth()
     }
-
+    
     /*=== info del blackboard ===*/
     temp.innerHTML = temperatura + '°C'
     time.innerHTML = hora + 'hs.'

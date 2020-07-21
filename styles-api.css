@@ -49,14 +49,14 @@
 
 /*=== moon ===*/
 
-.moon1{
+.moon1 {
   left: 4vw;
   opacity: 1;
 }
-.moon2{
+.moon2 {
   left: -2vw;
   opacity: 0;
 }
-.moon3{ opacity: 0;	}
-.moon4{ opacity: 0;	}
-.moon5{ opacity: 0;	}
+.moon3 { opacity: 0;	}
+.moon4 { opacity: 0;	}
+.moon5 { opacity: 0;	}
