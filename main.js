@@ -18,7 +18,8 @@ window.onload = function() {
     const hora = weather.location.localtime
     const lugar = weather.location.name
 
-        
+       
+
     /*=== query selector ===*/
     const container = document.querySelector('.containerPrincipal')
     const containerFlowers = document.querySelector('.containerFlowers')
@@ -29,7 +30,7 @@ window.onload = function() {
 
     const sun = document.querySelector('.sun')
     const moon = document.querySelector('.moon')
-    const seagulls = document.querySelector('seagull')
+    const seagull = document.querySelector('seagull')
 
 
     const flower1 = document.querySelector('.flower1')
@@ -59,7 +60,6 @@ window.onload = function() {
       sun.classList.remove('animacion-sol')
       moon.classList.add('moon1')
       moon.classList.remove('animacion-luna')
-      seagulls.classList.remove('animacion-gaviotas')
       link1.href = 'https://open.spotify.com/track/5iUQMwxUPdJBFeGkePtM66?si=-OMUGrpXSPyYf_1YkuVxKg'
       link7.href = 'https://open.spotify.com/track/1AnkHPw9pdBXfYoTJqY3sn?si=-PfgZiu7SQyvlOoMRLZjnQ' 
       return
@@ -119,23 +119,20 @@ window.onload = function() {
       return
     }
 
-    
-    const horaAComparar = parseInt(hora.slice(11,13))
+    let horaAComparar = parseInt(hora.slice(11,13))
 
-        
 
-    /*===cambio de cielo + flores segun °C===*/    
-    if(temperatura >= 8 && temperatura <= 10 && horaAComparar >= 20 || horaAComparar < 5){
-      first()
-      return
-    } else if(temperatura > 10 && temperatura <= 13 && horaAComparar > 7){
-      second()
-    } else if(temperatura > 13 && temperatura <= 15 && horaAComparar > 15) {
-      third()
-    } else if(temperatura > 15 && temperatura <= 18 && horaAComparar >= 5 && horaAComparar <= 7) {
-      fourth()
-    } else if(temperatura > 18 && horaAComparar > 12) {
-      fifth()
+    /*===cambio de cielo + flores segun horario===*/    
+    if(horaAComparar >= 20 || horaAComparar < 5){
+      first()      
+    } else if(horaAComparar > 7){
+      second()      
+    } else if(horaAComparar > 15) {
+      third()      
+    } else if(horaAComparar >= 5 && horaAComparar <= 7) {
+      fourth()      
+    } else if(horaAComparar > 12) {
+      fifth()      
     }
     
     /*=== info del blackboard ===*/
